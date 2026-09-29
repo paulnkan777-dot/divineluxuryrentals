@@ -1,0 +1,10 @@
+# Image-tool dependencies (reinstall with: npm install --prefix tools)
+tools/node_modules/
+
+# Netlify CLI local state
+.netlify/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini

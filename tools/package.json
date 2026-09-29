@@ -1,0 +1,8 @@
+{
+  "name": "divine-site-tools",
+  "private": true,
+  "description": "Optional helper for converting photos to WebP. Not needed to deploy the site.",
+  "dependencies": {
+    "sharp": "^0.34.0"
+  }
+}

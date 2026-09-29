@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /images/originals/
+
+# Replace example.com with the live domain.
+Sitemap: https://example.com/sitemap.xml
