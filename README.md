@@ -124,12 +124,21 @@ These photos show the type of item, not your exact stock. Replace each one with 
 
 ## Deploy
 
-1. **Before going live**, replace `https://example.com` with the real domain in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`), `robots.txt` and `sitemap.xml`.
-2. Deploy the whole folder, but leave out `tools/node_modules/` if it exists.
-   - **Netlify:** drag the folder onto https://app.netlify.com/drop. `_headers` sets image caching.
-   - **Vercel:** run `npx vercel` in this folder (or import it from GitHub). `vercel.json` sets caching.
-   - **cPanel:** upload the folder's contents to `public_html/`.
-3. Afterwards, test a link preview with the Facebook Sharing Debugger, and submit `sitemap.xml` in Google Search Console.
+The site is live at **https://divineluxuryrentals.netlify.app**. Netlify is connected to the GitHub repository, so publishing a change is just:
+
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+Netlify redeploys automatically within a minute or so. `netlify.toml` tells it there's no build step, and `_headers` sets caching.
+
+**Custom domain:** in Netlify, go to *Domain management → Add a domain* and follow the DNS steps. Then replace `https://divineluxuryrentals.netlify.app` with the new domain in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`), `robots.txt` and `sitemap.xml`, and push.
+
+**Other hosts:** Vercel (`npx vercel`, which uses `vercel.json`), or cPanel (upload the folder's contents to `public_html/`, leaving out `tools/node_modules/`).
+
+**After launch:** test a link preview with the Facebook Sharing Debugger, and submit `sitemap.xml` in Google Search Console.
 
 ## Notes
 

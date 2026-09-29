@@ -3,5 +3,5 @@ Allow: /
 Disallow: /tools/
 Disallow: /images/originals/
 
-# Replace example.com with the live domain.
-Sitemap: https://example.com/sitemap.xml
+# Change this if you add a custom domain.
+Sitemap: https://divineluxuryrentals.netlify.app/sitemap.xml
